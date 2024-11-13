@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Site Blocked - Limitly</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(to right, #4F46E5, #4338CA);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    .container {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      max-width: 90%;
+      width: 400px;
+    }
+    h1 { margin: 0 0 1rem; font-size: 1.5rem; }
+    p { margin: 0 0 1.5rem; opacity: 0.9; }
+    .icon {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 1.5rem;
+    }
+    .button {
+      background: white;
+      color: #4F46E5;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 15V17M12 7V13M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <h1>Site Blocked</h1>
+    <p>You've reached your daily time limit for this website. Take a break and come back tomorrow!</p>
+    <button class="button" onclick="window.history.back()">Go Back</button>
+  </div>
+</body>
+</html>
